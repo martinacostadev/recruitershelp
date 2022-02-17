@@ -43,6 +43,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  margin-bottom: 40px;
 }
 
 .title,
@@ -51,9 +52,8 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 0 4rem 0 4rem;
 }
 
 .code {
@@ -74,15 +74,17 @@
 }
 
 .card {
+  background-color: #fff;
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  min-height: 240px;
 }
 
 .card:hover,
@@ -92,15 +94,38 @@
   border-color: #0070f3;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
 .card p {
   margin: 0;
-  font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.sectionTitle {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 2rem 1rem;
+  padding: 1rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.likeCard {
+  margin: 1rem;
+  padding: 2rem;
+  line-height: 1.1rem;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  width: '100%';
+}
+
+.line {
+  background-color: rgb(126, 126, 126);
+  margin: 3rem 3rem 0 3rem;
+  height: 0.2rem;
+  width: 100%;
+  border-width: 1rem;
+  border-radius: 32px;
 }
 
 .logo {
@@ -111,6 +136,9 @@
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
+  }
+
+  .description {
+    padding: 1rem 0 1rem 0;
   }
 }
