@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Consejos para <a href="#">recruiters</a>
+          Consejos para <span className={styles.recruitersText}>recruiters</span>
         </h1>
 
         <div className={styles.description}>
@@ -22,6 +22,8 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.grid}>
+          <div className={styles.line} />
+
           <div className={styles.sectionTitle}>Mensajes que no nos gustan 😔</div>
 
           <div className={styles.card}>
@@ -52,7 +54,7 @@ const Home: NextPage = () => {
 
           <div className={styles.line} />
           
-          <div className={styles.sectionTitle}>Mensajes que nos gustan porque tiene toda la información necesaria 😍</div>
+          <div className={styles.sectionTitle}>Propuesta con toda la información necesaria 😍</div>
 
           <div className={styles.likeCard}>
             <p>¡Hola, Martín! ¿Cómo estás?</p>
